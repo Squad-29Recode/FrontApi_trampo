@@ -2,14 +2,14 @@ import React, { useEffect, useState } from "react";
 import "bootstrap/dist/css/bootstrap.css";
 import Head from "next/head";
 import axios from "axios";
-import { parse, format } from "date-fns"; // Importar a função parse e format de date-fns
+import { parse, format } from "date-fns"; 
 
 export default function Cursos() {
   const [cursos, setCursos] = useState([]);
 
   useEffect(() => {
     axios
-      .get("http://apitrampo.somee.com/api/Cursos")
+      .get("http://trampoapi.somee.com/api/Cursos")
       .then((response) => {
         setCursos(response.data);
       })

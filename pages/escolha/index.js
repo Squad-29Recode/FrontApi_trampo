@@ -4,11 +4,11 @@ import Head from "next/head";
 import { parse } from "date-fns";
 
 export default function Escolhas() {
-  const [escolhas, setEscolhas] = useState([]); // Corrigido de reservas para escolhas
+  const [escolhas, setEscolhas] = useState([]); 
 
   useEffect(() => {
     axios
-      .get("http://apitrampo.somee.com/api/Escolha")
+      .get("http://trampoapi.somee.com/api/Escolha")
       .then((response) => {
         setEscolhas(response.data);
       })

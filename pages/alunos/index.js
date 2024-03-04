@@ -8,7 +8,7 @@ export default function Alunos() {
 
   useEffect(() => {
     axios
-      .get("http://apitrampo.somee.com/api/Alunos")
+      .get("http://trampoapi.somee.com/api/Alunos")
       .then((response) => {
         setAlunos(response.data);
       })
