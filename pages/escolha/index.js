@@ -8,7 +8,7 @@ export default function Escolhas() {
 
   useEffect(() => {
     axios
-      .get("http://trampoapi.somee.com/api/Escolha")
+      .get("https://trampo.somee.com/api/Escolha")
       .then((response) => {
         setEscolhas(response.data);
       })

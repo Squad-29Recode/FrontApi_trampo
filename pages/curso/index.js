@@ -9,7 +9,7 @@ export default function Cursos() {
 
   useEffect(() => {
     axios
-      .get("http://trampoapi.somee.com/api/Cursos")
+      .get("https://trampo.somee.com/api/Cursos")
       .then((response) => {
         setCursos(response.data);
       })
